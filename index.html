@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/cami.png">
+    <title>TÜRKİYE EZAN VAKİTLERİ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="frame">
+        <div id="location">
+            <select id="city"></select>
+            <select id="district"></select>
+            <button id="submit">Tamam</button>
+        </div>
+        <div class="top">
+            <i class="locationButton fa-solid fa-location-dot"></i>
+            <h1 class="baslik"><span id="locationCity">ŞEHİR</span> EZAN VAKİTLERİ</h1>
+        </div>
+        <div class="vakitler">
+            <ul>
+                <li>
+                    <strong>İmsak</strong>
+                    <span id="imsak">00:00</span>
+                </li>
+                <li>
+                    <strong>Güneş</strong>
+                    <span id="gunes">00:00</span>
+                </li>
+                <li>
+                    <strong>Öğle</strong>
+                    <span id="ogle">00:00</span>
+                </li>
+                <li>
+                    <strong>İkindi</strong>
+                    <span id="ikindi">00:00</span>
+                </li>
+                <li>
+                    <strong>Akşam</strong>
+                    <span id="aksam">00:00</span>
+                </li>
+                <li>
+                    <strong>Yatsı</strong>
+                    <span id="yatsi">00:00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="kalan">
+            <span>Vakite Kalan Süre</span>
+            <div class="kalanSure">
+                <span id="kalanSaat">00</span>
+                <span>:</span>
+                <span id="kalanDakika">00</span>
+                <span>:</span>
+                <span id="kalanSaniye">00</span>
+            </div>
+        </div>
+        <span id="tarih">00.00.0000</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
